@@ -1,8 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ 
     <style>
         /* Basic Reset */
+        @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+          src: local('Material Icons'),
+            local('MaterialIcons-Regular'),
+            url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+            url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+            url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+        }
+        .material-icons {
+          font-family: 'Material Icons';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;  /* Preferred icon size */
+          display: inline-block;
+          line-height: 1;
+          text-transform: none;
+          letter-spacing: normal;
+          word-wrap: normal;
+          white-space: nowrap;
+          direction: ltr;
+        
+          /* Support for all WebKit browsers. */
+          -webkit-font-smoothing: antialiased;
+          /* Support for Safari and Chrome. */
+          text-rendering: optimizeLegibility;
+        
+          /* Support for Firefox. */
+          -moz-osx-font-smoothing: grayscale;
+        
+          /* Support for IE. */
+          font-feature-settings: 'liga';
+        }
+        @font-face {
+          font-family: 'Material Icons';
+          font-style: normal;
+          font-weight: 400;
+          src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+          src: local('Material Icons'),
+            local('MaterialIcons-Regular'),
+            url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+            url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+            url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+        }
+        .material-icons {
+          font-family: 'Material Icons';
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;  /* Preferred icon size */
+          display: inline-block;
+          line-height: 1;
+          text-transform: none;
+          letter-spacing: normal;
+          word-wrap: normal;
+          white-space: nowrap;
+          direction: ltr;
+        
+          /* Support for all WebKit browsers. */
+          -webkit-font-smoothing: antialiased;
+          /* Support for Safari and Chrome. */
+          text-rendering: optimizeLegibility;
+        
+          /* Support for Firefox. */
+          -moz-osx-font-smoothing: grayscale;
+        
+          /* Support for IE. */
+          font-feature-settings: 'liga';
+        }
+        
 * {
     margin: 0;
     padding: 0;
@@ -78,49 +150,159 @@
   <title>Dresses Shopping</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+      
 </head>
 <body>
-   
+  
         
   <header class="header">
     <div class="container">
-      <h1>Explore Our Beautiful Dresses Collection</h1>
-      <p>Find your perfect dress for any occasion!</p>
+      <h1>Welcome to LifeStyle</h1>
+      <h2>Explore Our Beautiful Dresses Collection</h2>
+      <p>Find your perfect dress for any occassion!</p>
+     
+      
+    
     </div>
   </header>
  
-  <p align = "middle">
+  <div align = "middle">
+    
+  
+  
+  
+  <button class="btn btn-primary"  style = "float: center">profile</button>
   <button class="btn btn-primary"  style = "float: center">Home</button>
-        <button class="btn btn-primary" type="sign up" align="center">sign up</button>
-        <button class="btn btn-primary" type="Profile" align="center">Profile</button>
-        <button class="btn btn-primary" type="Logout" align="center">Logout</button>
-        </p>
+  <button class="btn btn-primary"  style = "float: center"<button onclick="window.location.href='login.html'">Login</button></a>
+  </button>
+  <a href="Registration.html"><button class="btn btn-primary"  style = "float: center">signup</button></a>
+  <a href = "home.html"><button class="btn btn-primary"  style = "float: center">Logout</button></a>
+  <button class="btn btn-primary"  style = "float: right"> <span class="material-icons">
+    shopping_cart
+    </span></button>
+  <button class="btn btn-primary"  style = "float: right"><span class="material-icons">
+    favorite_border
+    </span></button>
+
+  </div>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/add1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/add2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="images/add3.webp" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
   <main class="container">
     <section class="dresses">
         
       <div class="dress">
         <img src="images/dress1.jpg" alt="Dress 1" width="30" height="400">
-        <h2>Dress 1</h2>
-        <p>Description of Dress 1 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <p>Price: $49.99</p>
+        <h2>Party Wear </h2>
+        <p>Embellished round-neck fit & flare dress</p>
+        <p>Price: 2000</p>
         <a href="#" class="btn">View Details</a>
+        <button class="btn btn-primary"  style = "float: right"><span class="material-icons">
+          favorite_border
+          </span></button>
+        
+          </span></button>
+ 
+
       </div>
       <div class="dress">
         <img src="images/dress2.jpg" alt="Dress 2" width="30" height="400">
-        <h2>Dress 2</h2>
-        <p>Description of Dress 2 goes here. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        <p>Price: $59.99</p>
+        <h2>Long Frock</h2>
+        <p>Embroidered Gown dress </p>
+        <p>Price: 1899</p>
         <a href="#" class="btn">View Details</a>
+        <button class="btn btn-primary"  style = "float: right"><span class="material-icons">
+          favorite_border
+          </span></button>
+        
       </div>
       <div class="dress">
-        <img src="dress3.jpg" alt="Dress 3">
-        <h2>Dress 3</h2>
-        <p>Description of Dress 3 goes here. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <p>Price: $39.99</p>
+        <img src="images/dress3.jpg" alt="Dress 3">
+        <h2>Maxi Dress</h2>
+        <p>Cotton gown dress with Jacket</p>
+        <p>Price: 899</p>
         <a href="#" class="btn">View Details</a>
+        <button class="btn btn-primary"  style = "float: right"><span class="material-icons">
+          favorite_border
+          </span></button>
+   
+      </div>
+      <div class="dress">
+        <img src="images/dress4.jpg" alt="Dress 4">
+        <h2>Kurthi Set</h2>
+        <p>Printed anarkali kurta with pants and dupattas</p>
+        <p>Price: 899</p>
+        <a href="#" class="btn">View Details</a>
+        <button class="btn btn-primary"  style = "float: right"><span class="material-icons">
+          favorite_border
+          </span></button>
+  
+      </div>
+      <div class="dress">
+        <img src="images/dress5.jpg" alt="Dress 5">
+        <h2>Floral dress</h2>
+        <p>Women Embellished Round neck Gown dress</p>
+        <p>Price:999</p>
+        <a href="#" class="btn">View Details</a>
+        <button class="btn btn-primary"  style = "float: right"><span class="material-icons">
+          favorite_border
+          </span></button>
+
+      </div>
+      <div class="dress">
+        <img src="images/dress6.jpg" alt="Dress 6">
+        <h2>Anarkali</h2>
+        <p>Women Printed Fit and Flare dress</p>
+        <p>Price: 1499</p>
+        <a href="#" class="btn">View Details</a>
+        <button class="btn btn-primary"  style = "float: right"><span class="material-icons">
+          favorite_border
+          </span></button>
+ 
       </div>
     </section>
+
   </main>
  
 
